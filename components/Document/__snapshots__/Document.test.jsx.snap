@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Container"
+>
+  <div
+    className="Container"
+  >
+    <div
+      className="ContainerLeft"
+    >
+      <div
+        className="ItemContainer"
+      />
+    </div>
+    <div
+      className="ContainerRight"
+    >
+      <div
+        className="ItemContainer"
+      />
+    </div>
+  </div>
+  <div
+    className="Container"
+  >
+    <div
+      className="ColumnContainer"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="Container"
+      >
+        <div
+          className="ContentBody"
+        >
+          <ul>
+            
+
+            <li>
+              <strong>
+                标签
+              </strong>
+               记录自己想法的时候，使用 
+              <code>
+                #这是tag#
+              </code>
+               来打标签.  你的标签会聚合在你的个人页面, 在浏览自己的记录，选择某个标签的时候，会展现所有这个标签的条目.
+            </li>
+            
+
+            <li>
+              <strong>
+                同步
+              </strong>
+               如果希望把当前的记录同步到微博, 可以使用 
+              <code>
+                @weibo
+              </code>
+               这个指令. 
+              <code>
+                @i
+              </code>
+               这个指令则把当前记录发送给开发者，可以用于反馈和建议.
+            </li>
+            
+
+            <li>
+              <strong>
+                传呼机
+              </strong>
+               该功能目前在 iOS （即将支持 Mac, iPad）平台提供，用户可以向个人的叽喳地址直接发送消息，消息将会以推送的形式发到自己的设备上.
+            </li>
+            
+
+          </ul>
+          
+
+          <pre>
+            <code>
+              curl -X POST https://&lt;Your ID&gt;.giki.app 
+     -H 'Content-Type: application/json' 
+     -H 'Authorization: Bearer &lt;Your Token&gt;' 
+     -d '{"body": "hello world", "title": "Hi"}'
+
+            </code>
+          </pre>
+          
+
+          <p>
+            <img
+              alt=""
+              src="/images/beeper.jpeg"
+            />
+          </p>
+          
+
+          <ul>
+            
+
+            <li>
+              <strong>
+                备份
+              </strong>
+               如果你是叽喳的 iOS 客户端用户，则你的数据将私密的保存在你自己的苹果 iCloud 服务中，其他平台的用户，你需要在设置页面进行对应云存储服务的绑定，比如你希望把自己的记录备份到 Dropbox, 你可以在设置页面去授权 Dropbox 备份功能.
+            </li>
+            
+
+            <li>
+              <strong>
+                私密
+              </strong>
+               如果条目使用 
+              <code>
+                #private#
+              </code>
+               标签时，则个人站点上的该条目仅自己可见.
+            </li>
+            
+
+            <li>
+              <strong>
+                Markdown
+              </strong>
+               叽喳支持绝大数的 Markdown 语法，不过如果你发现有遗漏，可以通过 
+              <a
+                href="mailto:h.minghe@gmail.com"
+              >
+                Emial
+              </a>
+              直接反馈给我们.
+            </li>
+            
+
+            <li>
+              <strong>
+                删除条目
+              </strong>
+               如果你正在使用的是叽喳的移动应用，则可通过长按条目进行删除；如果你正在使用的是叽喳的网页应用，鼠标移动到条目上则会出现删除按钮，你可以点击删除按钮进行删除. 删除操作之后条目在永久删除
+            </li>
+            
+
+            <li>
+              <strong>
+                删除账户
+              </strong>
+               在叽喳的移动应用以及网页应用的设置页面中都有删除操作，你可以通过它来删除自己的账户，请谨慎使用该功能，删除之后，你的数据将不可恢复（已同步到你的个人云存储的数据则不受影响).
+            </li>
+            
+
+            <li>
+              <strong>
+                插入图片
+              </strong>
+               目前写作中插入图片的功能仅仅在 iOS 客户端中原生支持。其他客户端不过可以采用 Markdown 的图片展示方式.
+            </li>
+            
+
+          </ul>
+          
+
+          <pre>
+            <code>
+              ![pic](https://url-to-your-pic.png)
+
+            </code>
+          </pre>
+          
+
+          <ul>
+            
+
+            <li>
+              <strong>
+                绑定域名
+              </strong>
+               叽喳支持用户绑定自己的个人域名到叽喳账户, 请 
+              <a
+                href="mailto:h.minghe@gmail.com"
+              >
+                Email
+              </a>
+               联系作者进行绑定。
+            </li>
+            
+
+          </ul>
+          
+
+          <h2>
+            其他
+          </h2>
+          
+
+          <p>
+            欢迎访问叽喳开发者的页面: 
+            <a
+              href="https://i.giki.app"
+            >
+              https://i.giki.app
+            </a>
+            , 也可以通过他的个人域名 
+            <a
+              href="https://iiiii.li"
+            >
+              iiiii.li
+            </a>
+             访问, 他时常会都把工作和生活中值得记录的东西记录在他的主页里面, 当然如果你想给开发者反馈和建议, 可以直接在叽喳应用中记录的时候包含 
+            <code>
+              @i
+            </code>
+             字符，我们将第一时间看到你的反馈. 当然你也可以直接写 
+            <a
+              href="mailto:h.minghe@gmail.com"
+            >
+              Email
+            </a>
+             给我们。点击 
+            <a
+              href="https://giki.app/contact"
+            >
+              联系页面
+            </a>
+             可以获得我们的所有联系方式.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

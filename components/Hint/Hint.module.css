@@ -1,0 +1,26 @@
+.Container {
+  display: flex;
+  width: 90%;
+  text-align: center;
+  font-size: 0.8em;
+  color: grey;
+  margin: 0 auto;
+  background-color: var(--hintbackground);
+  padding: 8px;
+}
+
+.MessageContainer {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.IconContainer {
+  width: 10%;
+  text-align: right;
+  float: right;
+}

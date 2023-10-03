@@ -1,0 +1,32 @@
+.TabContainer {
+  display: flex;
+  padding: 16px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  height: 20px;
+  justify-content: center;
+}
+
+.TabTitleContainer {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 0.8em;
+  color: var(--text);
+  padding-left: 0.2em;
+}
+
+.TabIconContainer {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+}
+
+.TabTitleContainer a {
+  text-decoration: none;
+}

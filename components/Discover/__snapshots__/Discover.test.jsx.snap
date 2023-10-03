@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Container"
+>
+  <div
+    className="Container"
+  >
+    <div
+      className="ContainerLeft"
+    >
+      <div
+        className="ItemContainer"
+      >
+        <div>
+          <div
+            className="AvatarContainer"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundImage": "url(a-avatar),url(https://via.placeholder.com/100x100/000000/FFFFFF/?text=Giki)",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="ContainerRight"
+    >
+      <div
+        className="ItemContainer"
+      />
+      <div
+        className="ItemContainer"
+      />
+    </div>
+  </div>
+  <div
+    className="Container"
+  >
+    <div
+      className="ColumnContainer"
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="Container"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="MenuContainer"
+        >
+          <div
+            className="DateContainer"
+          >
+            undefined NaN NaN:NaN
+          </div>
+          <div
+            className="ActionButtonDelete"
+            onClick={[Function]}
+          >
+            <div
+              className="AvatarContainer"
+            >
+              <div
+                className="AvatarContainer"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundImage": "url(undefined),url(https://via.placeholder.com/100x100/000000/FFFFFF/?text=Giki)",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="ContentBody"
+          onClick={[Function]}
+        >
+          <p>
+            text-1
+          </p>
+        </div>
+        <div
+          className="ItemFooter"
+        >
+          <div
+            className="TagsContainer"
+          />
+          <div
+            className="LikesContainer"
+            onClick={[Function]}
+          >
+            <div
+              className="LikeCount"
+            />
+            <svg
+              height="12"
+              viewBox="0 0 24 24"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0H24V24H0z"
+                fill="none"
+              />
+              <path
+                d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z"
+                fill="rgba(211,211,211,1)"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ColumnContainer"
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="Container"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="MenuContainer"
+        >
+          <div
+            className="DateContainer"
+          >
+            undefined NaN NaN:NaN
+          </div>
+          <div
+            className="ActionButtonDelete"
+            onClick={[Function]}
+          >
+            <div
+              className="AvatarContainer"
+            >
+              <div
+                className="AvatarContainer"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundImage": "url(undefined),url(https://via.placeholder.com/100x100/000000/FFFFFF/?text=Giki)",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="ContentBody"
+          onClick={[Function]}
+        >
+          <p>
+            text-2
+          </p>
+        </div>
+        <div
+          className="ItemFooter"
+        >
+          <div
+            className="TagsContainer"
+          />
+          <div
+            className="LikesContainer"
+            onClick={[Function]}
+          >
+            <div
+              className="LikeCount"
+            />
+            <svg
+              height="12"
+              viewBox="0 0 24 24"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0H24V24H0z"
+                fill="none"
+              />
+              <path
+                d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z"
+                fill="rgba(211,211,211,1)"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

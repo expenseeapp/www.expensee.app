@@ -1,0 +1,26 @@
+.Container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.LogoContainer {
+  width: 50%;
+}
+
+.LogoContainer img {
+  float: left;
+}
+
+.AvatarContainer {
+  width: 50%;
+  text-align: right;
+}
+
+.AvatarContainer img {
+  float: right;
+  border-radius: 18px;
+  width: 18px;
+  height: 18px;
+}

@@ -1,0 +1,11 @@
+.Nomore {
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--btn);
+  padding: 12px;
+}
+
+.ContributionContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+}

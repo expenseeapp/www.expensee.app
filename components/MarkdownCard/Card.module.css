@@ -1,0 +1,68 @@
+.Container {
+  border-radius: 6px;
+  padding: 12px;
+  background-color: var(--background);
+}
+
+.Container img {
+  width: 100%;
+  max-width: min-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.ContentBody {
+  composes: TextBase from '../../styles/text.css';
+}
+
+/* .ContentBody p { */
+/*   font-size: 14px; */
+/*   line-height: 1.5; */
+/*   word-wrap: break-word; */
+/* } */
+/*  */
+/* .ContentBody h1,h2,h3,h4,strong { */
+/*   font-size: 1em; */
+/*   margin: 0 auto; */
+/* } */
+/*  */
+/* .ContentBody h1 { */
+/*   font-size: 1.4em; */
+/*   padding-top: 20px; */
+/*   padding-bottom: 20px; */
+/* } */
+/*  */
+/* .ContentBody h2 { */
+/*   font-size: 1.2em; */
+/*   padding-top: 24px; */
+/*   padding-bottom: 20px; */
+/* } */
+/*  */
+/* .ContentBody h3 { */
+/*   font-size: 1em; */
+/*   padding-top: 16px; */
+/*   padding-bottom: 10px; */
+/* } */
+/*  */
+.ContentBody strong {
+}
+
+.ContentBody code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 3px;
+}
+
+.ContentBody blockquote {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-left: 0.25em solid #e52e71;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.ContentBody a {
+  word-break: break-all;
+}

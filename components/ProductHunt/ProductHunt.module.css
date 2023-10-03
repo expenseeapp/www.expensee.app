@@ -1,0 +1,12 @@
+.ProductHunt {
+  width: 120px;
+  height: 54px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .ProductHunt {
+    width: 60px;
+    height: 54px;
+  }
+}

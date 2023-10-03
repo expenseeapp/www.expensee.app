@@ -1,0 +1,82 @@
+/* stylelint-disable */
+.SectionContainer {
+  border-radius: 2px;
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-top: 12px;
+  background-color: var(--background);
+}
+
+.SectionTitle {
+  display: block;
+  fill: rgb(0 0 0 / 84%);
+  font-size: 21px;
+  font-style: normal;
+  height: 24px;
+  letter-spacing: -0.29px;
+  line-height: 24px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-align: left;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  transform: matrix(1, 0, 0, 1, 0, -1.88);
+  visibility: visible;
+  width: 649px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.SectionItem {
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.SectionItemWithAction {
+  composes: SectionItem;
+  display: flex;
+  align-items: center;
+}
+
+.SectionItemWithActionLeft {
+  width: 80%;
+}
+
+.SectionItemWithActionRight {
+  width: 20%;
+}
+
+.SectionItemDescription {
+  word-break: break-word;
+  display: block;
+  fill: rgb(0 0 0 / 76%);
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.4em;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-top: 10px;
+  text-align: left;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  transform: matrix(1, 0, 0, 1, 0, 1.52);
+  visibility: visible;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.SectionItemHint {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: var(--text);
+}
+
+.SectionDescription a {
+  text-decoration: none;
+}

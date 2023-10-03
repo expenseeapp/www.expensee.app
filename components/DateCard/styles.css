@@ -1,0 +1,27 @@
+.Container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.Container button {
+  font-size: 0.75em !important;
+  width: 100%;
+  min-width: initial;
+  line-height: initial;
+  height: 1.8em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 2px;
+  border: none;
+}
+
+.ItemSelected button {
+  font-weight: bold;
+  border: 1px solid black;
+  background: none;
+}
+
+.CloseIcon {
+  cursor: pointer;
+  margin-left: 2px;
+}

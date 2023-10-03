@@ -1,0 +1,30 @@
+.Container {
+  width: 100%;
+  text-align: center;
+}
+
+.LogoContainer {
+  width: 48px;
+  height: 48px;
+  background-color: lightgrey;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.Container img {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.SloganContainer h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.2;
+}
