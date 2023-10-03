@@ -1,0 +1,283 @@
+import { MarkdownIcon, TypographyIcon } from '@primer/octicons-react'
+import { ChangeEvent, useCallback, useEffect, useRef, useState } from 'react'
+import { handleCommentClick, processCommentBody } from '../../lib/adapter'
+import { useGiscusTranslation } from '../../lib/i18n'
+import { useUser } from '../../lib/contexts/user'
+import { IUser } from '../../lib/types/adapter'
+import { resizeTextArea } from '../../lib/utils'
+import { renderMarkdown } from '../../services/siple/markdown'
+import { gql, useMutation, ApolloError } from '@apollo/client'
+
+const CREATE_TALK = gql`
+  mutation CreateTalk($input: TalkData!) {
+    createTalk(input: $input) {
+      text
+      tags
+      created_at
+      updated_at
+    }
+  }
+`
+
+import parse from './parser'
+
+interface CommentBoxProps {
+  viewer?: IUser
+  discussionId?: string
+  context?: string
+  replyToId?: string
+  onSubmit: (err: Error | number | null) => void
+}
+
+export default function CommentBox({
+  viewer,
+  discussionId,
+  context,
+  replyToId,
+  onSubmit,
+}: CommentBoxProps) {
+  const { t } = useGiscusTranslation()
+  const [isPreview, setIsPreview] = useState(false)
+  const [input, setInput] = useState('')
+  const [lastInput, setLastInput] = useState('')
+  const [preview, setPreview] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+  const [isReplyOpen, setIsReplyOpen] = useState(false)
+  const [isFixedWidth, setIsFixedWidth] = useState(false)
+  const [lastHeight, setLastHeight] = useState('')
+  const { user } = useUser()
+  const [createTalk, { loading }] = useMutation(CREATE_TALK)
+
+  const textarea = useRef<HTMLTextAreaElement>(null)
+  const loginUrl = '/sign'
+  const isReply = !!replyToId
+
+  useEffect(() => {
+    if (isPreview && input !== lastInput) {
+      if (input) {
+        setIsLoading(true)
+        renderMarkdown(input, context).then((value) => {
+          const processed = processCommentBody(value)
+          setPreview(processed)
+          setIsLoading(false)
+        })
+      }
+      setLastInput(input)
+    }
+  }, [isPreview, input, lastInput, context])
+
+  const reset = useCallback(() => {
+    setInput('')
+    setPreview('')
+    setIsPreview(false)
+    setIsReplyOpen(false)
+  }, [])
+
+  const handleSubmit = useCallback(async () => {
+    if (loading) {
+      return
+    }
+
+    //TODO clean up
+    // eslint-disable-next-line
+    if (replyToId && false) {
+      // addDiscussionReply(payload, token).then(({ data: { addDiscussionReply } }) => {
+      //   const { reply } = addDiscussionReply
+      //   const adapted = adaptReply(reply)
+      //
+      //   onSubmit(adapted)
+      //   reset()
+      // })
+    } else {
+      const { actions, tags, cleanedText } = parse(input)
+      createTalk({
+        variables: {
+          input: {
+            text: cleanedText,
+            actions,
+            tags,
+            private: tags.indexOf('private') !== -1,
+          },
+        },
+        onCompleted: () => {
+          onSubmit(null)
+          reset()
+        },
+        onError: (error: ApolloError) => {
+          onSubmit(error)
+          console.warn(error)
+        },
+      })
+    }
+  }, [discussionId, input, replyToId, onSubmit, reset])
+
+  const handleReplyOpen = () => {
+    setIsReplyOpen(true)
+  }
+
+  const handleTextAreaChange = useCallback(
+    (event: ChangeEvent<HTMLTextAreaElement>) => {
+      setInput(event.target.value)
+      // Only resize if it hasn't been resized manually.
+      if (!lastHeight || lastHeight === textarea.current.style.height) {
+        resizeTextArea(textarea.current)
+        setLastHeight(textarea.current.style.height)
+      }
+    },
+    [lastHeight],
+  )
+
+  useEffect(() => {
+    if (!textarea.current) return
+    if (isReplyOpen) textarea.current.focus()
+  }, [isReplyOpen])
+
+  return !isReply || isReplyOpen ? (
+    <form
+      className={`color-bg-primary color-border-primary gsc-comment-box${
+        isReply ? ' gsc-comment-box-is-reply' : ''
+      }`}
+      onSubmit={(event) => {
+        event.preventDefault()
+        handleSubmit()
+      }}
+    >
+      <div className="color-bg-tertiary color-border-primary gsc-comment-box-tabs">
+        <div className="mx-2 mb-[-1px] mt-2">
+          <button
+            className={`px-4 py-2 border border-b-0 focus:outline-none ${
+              !isPreview
+                ? 'color-text-primary color-bg-canvas rounded-t color-border-primary'
+                : 'color-text-secondary border-transparent'
+            }`}
+            onClick={() => setIsPreview(false)}
+            type="button"
+          >
+            {t('write')}
+          </button>
+          <button
+            className={`px-4 py-2 border border-b-0 focus:outline-none ml-1 ${
+              isPreview
+                ? 'color-text-primary color-bg-canvas rounded-t color-border-primary'
+                : 'color-text-secondary border-transparent'
+            }`}
+            onClick={() => setIsPreview(true)}
+            type="button"
+            tabIndex={-1}
+          >
+            {t('preview')}
+          </button>
+        </div>
+
+        {!isPreview ? (
+          <div className="gsc-comment-box-md-toolbar">
+            <button
+              className="gsc-toolbar-item"
+              type="button"
+              title={isFixedWidth ? t('disableFixedWidth') : t('enableFixedWidth')}
+              onClick={() => {
+                setIsFixedWidth(!isFixedWidth)
+                textarea.current.focus()
+              }}
+              tabIndex={-1}
+            >
+              <TypographyIcon />
+            </button>
+          </div>
+        ) : null}
+      </div>
+      <div className="gsc-comment-box-main">
+        {isPreview ? (
+          <div
+            className="markdown color-border-primary gsc-comment-box-preview"
+            dangerouslySetInnerHTML={
+              isLoading ? undefined : { __html: preview || t('nothingToPreview') }
+            }
+            onClick={handleCommentClick}
+          >
+            {isLoading ? t('loadingPreview') : undefined}
+          </div>
+        ) : (
+          <textarea
+            className={`form-control input-contrast gsc-comment-box-textarea ${
+              isFixedWidth ? 'gsc-is-fixed-width' : ''
+            }`}
+            placeholder={user && user.token ? t('writeAComment') : t('signInToComment')}
+            onChange={handleTextAreaChange}
+            value={input}
+            disabled={!user || !user.token || loading}
+            ref={textarea}
+            onKeyDown={(event) =>
+              (event.ctrlKey || event.metaKey) && event.key === 'Enter' && handleSubmit()
+            }
+          ></textarea>
+        )}
+      </div>
+      <div className="gsc-comment-box-bottom">
+        <a
+          className="link-secondary gsc-comment-box-markdown-hint"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          href="https://guides.github.com/features/mastering-markdown/"
+        >
+          <MarkdownIcon className="mr-1" />
+          {t('stylingWithMarkdownIsSupported')}
+        </a>
+        <div className="gsc-comment-box-buttons">
+          {isReply ? (
+            <button
+              className="ml-1 border rounded-md btn"
+              onClick={() => setIsReplyOpen(false)}
+              type="button"
+            >
+              {t('cancel')}
+            </button>
+          ) : null}
+          {user && user.token ? (
+            <button
+              className="ml-1 border rounded-md items-center btn btn-primary"
+              type="submit"
+              disabled={(user && user.token && !input.trim()) || loading}
+            >
+              {isReply ? t('reply') : t('comment')}
+            </button>
+          ) : (
+            <a
+              className="ml-1 border hover:no-underline rounded-md inline-flex items-center btn btn-primary"
+              target="_top"
+              href={loginUrl}
+            >
+              {t('signInToWrite')}
+            </a>
+          )}
+        </div>
+      </div>
+    </form>
+  ) : (
+    <div className="color-bg-tertiary gsc-reply-box">
+      {viewer ? (
+        <a
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          href={viewer.url}
+          className="flex items-center flex-shrink-0"
+        >
+          <img
+            className="inline-block rounded-full"
+            src={viewer.avatarUrl}
+            width="30"
+            height="30"
+            alt={`@${viewer.login}`}
+          />
+        </a>
+      ) : null}
+      <button
+        className="w-full px-2 py-1 ml-2 text-left border rounded cursor-text form-control color-text-secondary color-border-primary"
+        onClick={handleReplyOpen}
+        type="button"
+      >
+        {t('writeAReply')}
+      </button>
+    </div>
+  )
+}

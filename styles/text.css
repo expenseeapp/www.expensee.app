@@ -1,0 +1,13 @@
+.TextBase {
+  fill: rgb(0 0 0 / 76%);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  visibility: visible;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+}

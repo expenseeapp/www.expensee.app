@@ -1,0 +1,673 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Container"
+>
+  <div
+    className="Container"
+  >
+    <div
+      className="ContainerLeft"
+    >
+      <div
+        className="ItemContainer"
+      />
+    </div>
+    <div
+      className="ContainerCenter"
+    >
+      <div
+        className="AvatarContainer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundImage": "url(a-avatar),url(https://via.placeholder.com/100x100/000000/FFFFFF/?text=Giki)",
+          }
+        }
+      />
+    </div>
+    <div
+      className="ContainerRight"
+    >
+      <div
+        className="ItemContainer"
+      />
+    </div>
+  </div>
+  
+  <div
+    className="SectionContainer"
+  />
+  <div
+    className="Container"
+  >
+    <div
+      className="ColumnContainer"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItem"
+        >
+          <div
+            className="CardLabel"
+          >
+            <span
+              className="CardLabelText"
+            >
+              [missing "en.bio" translation]
+            </span>
+          </div>
+          <div
+            className="SectionItemDescription"
+          >
+            <div
+              className="Container"
+              onClick={[Function]}
+            >
+              <div />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItem"
+        >
+          <div
+            className="CardLabel"
+          >
+            <span
+              className="CardLabelText"
+            >
+              [missing "en.avatar" translation]
+            </span>
+          </div>
+          <div
+            className="SectionItemDescription"
+          >
+            <div
+              className="SectionItemHint"
+            >
+              [missing "en.avatarDetail" translation]
+            </div>
+            <div
+              className="Container"
+              onClick={[Function]}
+            >
+              <div>
+                a-avatar
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItem"
+        >
+          <div
+            className="CardLabel"
+          >
+            <span
+              className="CardLabelText"
+            >
+              [missing "en.personalURL" translation]
+            </span>
+          </div>
+          <div
+            className="SectionItemDescription"
+          >
+            <div
+              className="SectionItemHint"
+            >
+              [missing "en.personalURLDetail" translation] (https://a-name.giki.app)
+            </div>
+            <div
+              className="Container"
+              onClick={[Function]}
+            >
+              <div>
+                a-name
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItem"
+        >
+          <div
+            className="CardLabel"
+          >
+            <span
+              className="CardLabelText"
+            >
+              [missing "en.bindingDomain" translation]
+            </span>
+          </div>
+          <div
+            className="SectionItemDescription"
+          >
+            <div
+              className="SectionItemHint"
+            >
+              [missing "en.CustomDomainInfo" translation]
+            </div>
+            <div
+              className="Container"
+              onClick={[Function]}
+            >
+              <div />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Container"
+  >
+    <div
+      className="ColumnContainer"
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItemWithAction"
+        >
+          <div
+            className="SectionItemWithActionLeft"
+          >
+            <h3
+              className="SectionItemTitle"
+            >
+              Weibo
+            </h3>
+          </div>
+          <div
+            className="SwitchButtonContainer"
+          >
+            <div
+              style={
+                Object {
+                  "MozTransition": "opacity 0.25s",
+                  "MozUserSelect": "none",
+                  "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                  "WebkitTransition": "opacity 0.25s",
+                  "WebkitUserSelect": "none",
+                  "borderRadius": 10,
+                  "direction": "ltr",
+                  "display": "inline-block",
+                  "msUserSelect": "none",
+                  "opacity": 1,
+                  "position": "relative",
+                  "textAlign": "left",
+                  "touchAction": "none",
+                  "transition": "opacity 0.25s",
+                  "userSelect": "none",
+                }
+              }
+            >
+              <div
+                className="react-switch-bg"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                style={
+                  Object {
+                    "MozTransition": "background 0.25s",
+                    "WebkitTransition": "background 0.25s",
+                    "background": "#888888",
+                    "borderRadius": 10,
+                    "cursor": "pointer",
+                    "height": 20,
+                    "margin": 0,
+                    "position": "relative",
+                    "transition": "background 0.25s",
+                    "width": 40,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "MozTransition": "opacity 0.25s",
+                      "WebkitTransition": "opacity 0.25s",
+                      "height": 20,
+                      "opacity": 0,
+                      "pointerEvents": "none",
+                      "position": "relative",
+                      "transition": "opacity 0.25s",
+                      "width": 22,
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "position": "absolute",
+                        "top": 0,
+                      }
+                    }
+                    viewBox="-2 -5 17 21"
+                    width="100%"
+                  >
+                    <path
+                      d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+                      fill="#fff"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "MozTransition": "opacity 0.25s",
+                      "WebkitTransition": "opacity 0.25s",
+                      "height": 20,
+                      "opacity": 1,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "transition": "opacity 0.25s",
+                      "width": 22,
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "position": "absolute",
+                        "top": 0,
+                      }
+                    }
+                    viewBox="-2 -5 14 20"
+                    width="100%"
+                  >
+                    <path
+                      d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+                      fill="#fff"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                className="react-switch-handle"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                style={
+                  Object {
+                    "MozTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                    "WebkitTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                    "background": "#ffffff",
+                    "border": 0,
+                    "borderRadius": "50%",
+                    "boxShadow": null,
+                    "cursor": "pointer",
+                    "display": "inline-block",
+                    "height": 18,
+                    "outline": 0,
+                    "position": "absolute",
+                    "top": 1,
+                    "transform": "translateX(1px)",
+                    "transition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                    "width": 18,
+                  }
+                }
+              />
+              <input
+                aria-checked={false}
+                checked={false}
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyUp={[Function]}
+                role="switch"
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0 0 0 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "width": 1,
+                  }
+                }
+                type="checkbox"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ColumnContainer"
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItemWithAction"
+        >
+          <div
+            className="SectionItemWithActionLeft"
+          >
+            <h3
+              className="SectionItemTitle"
+            >
+              Dropbox
+            </h3>
+          </div>
+          <div
+            className="SwitchButtonContainer"
+          >
+            <div
+              style={
+                Object {
+                  "MozTransition": "opacity 0.25s",
+                  "MozUserSelect": "none",
+                  "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                  "WebkitTransition": "opacity 0.25s",
+                  "WebkitUserSelect": "none",
+                  "borderRadius": 10,
+                  "direction": "ltr",
+                  "display": "inline-block",
+                  "msUserSelect": "none",
+                  "opacity": 1,
+                  "position": "relative",
+                  "textAlign": "left",
+                  "touchAction": "none",
+                  "transition": "opacity 0.25s",
+                  "userSelect": "none",
+                }
+              }
+            >
+              <div
+                className="react-switch-bg"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                style={
+                  Object {
+                    "MozTransition": "background 0.25s",
+                    "WebkitTransition": "background 0.25s",
+                    "background": "#888888",
+                    "borderRadius": 10,
+                    "cursor": "pointer",
+                    "height": 20,
+                    "margin": 0,
+                    "position": "relative",
+                    "transition": "background 0.25s",
+                    "width": 40,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "MozTransition": "opacity 0.25s",
+                      "WebkitTransition": "opacity 0.25s",
+                      "height": 20,
+                      "opacity": 0,
+                      "pointerEvents": "none",
+                      "position": "relative",
+                      "transition": "opacity 0.25s",
+                      "width": 22,
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "position": "absolute",
+                        "top": 0,
+                      }
+                    }
+                    viewBox="-2 -5 17 21"
+                    width="100%"
+                  >
+                    <path
+                      d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+                      fill="#fff"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "MozTransition": "opacity 0.25s",
+                      "WebkitTransition": "opacity 0.25s",
+                      "height": 20,
+                      "opacity": 1,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "transition": "opacity 0.25s",
+                      "width": 22,
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "position": "absolute",
+                        "top": 0,
+                      }
+                    }
+                    viewBox="-2 -5 14 20"
+                    width="100%"
+                  >
+                    <path
+                      d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+                      fill="#fff"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                className="react-switch-handle"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                style={
+                  Object {
+                    "MozTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                    "WebkitTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                    "background": "#ffffff",
+                    "border": 0,
+                    "borderRadius": "50%",
+                    "boxShadow": null,
+                    "cursor": "pointer",
+                    "display": "inline-block",
+                    "height": 18,
+                    "outline": 0,
+                    "position": "absolute",
+                    "top": 1,
+                    "transform": "translateX(1px)",
+                    "transition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                    "width": 18,
+                  }
+                }
+              />
+              <input
+                aria-checked={false}
+                checked={false}
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyUp={[Function]}
+                role="switch"
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0 0 0 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "width": 1,
+                  }
+                }
+                type="checkbox"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Container"
+  >
+    <div
+      className="ColumnContainer"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItem"
+        >
+          <div
+            className="CardLabel"
+          >
+            <span
+              className="CardLabelText"
+            >
+              [missing "en.loginTokenTitle" translation]
+            </span>
+          </div>
+          <div
+            className="SectionItemHint"
+          >
+            [missing "en.loginTokenDescription" translation]
+          </div>
+          <pre
+            className="CardCode"
+          >
+            a-token
+          </pre>
+        </div>
+      </div>
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItemWithAction"
+        >
+          <div
+            className="SectionItemWithActionLeft"
+          >
+            <div
+              className="CardLabel"
+            >
+              <span
+                className="CardLabelText"
+              >
+                [missing "en.signoutTitle" translation]
+              </span>
+            </div>
+            <div
+              className="SectionItemHint"
+            >
+              [missing "en.signoutDetail" translation]
+            </div>
+          </div>
+          <div>
+            <button
+              className="Logout"
+              onClick={[Function]}
+            >
+              [missing "en.signout" translation]
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="CardContainer"
+      >
+        <div
+          className="SectionItemWithAction"
+        >
+          <div
+            className="SectionItemWithActionLeft"
+          >
+            <div
+              className="CardLabel"
+            >
+              <span
+                className="CardLabelText"
+              >
+                [missing "en.RemoveAccount" translation]
+              </span>
+            </div>
+            <div
+              className="SectionItemHint"
+            >
+              [missing "en.RemoveAccountDescription" translation]
+            </div>
+          </div>
+          <div>
+            <button
+              className="Logout"
+              onClick={[Function]}
+            >
+              [missing "en.RemoveAccount" translation]
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+.ButtonGroup {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ButtonGroup button {
+  margin-left: 10px;
+  max-width: 60px;
+  font-size: 0.8em;
+  margin-top: 10px;
+  padding: 0 0;
+  margin-top: 4px;
+}

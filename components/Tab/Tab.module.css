@@ -1,0 +1,41 @@
+.Container {
+  padding: 8px;
+}
+
+.TabContainer {
+  display: flex;
+  color: var(--btn);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: var(--background);
+  margin: auto;
+  height: 20px;
+  justify-content: center;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.TabTitleContainer {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 0.8em;
+  color: var(--text);
+  padding-left: 0.2em;
+}
+
+.TabIconContainer {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+}
+
+.TabTitleContainer a {
+  text-decoration: none;
+}

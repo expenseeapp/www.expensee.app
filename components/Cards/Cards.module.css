@@ -1,0 +1,13 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  margin: 6px;
+  padding-bottom: 6px;
+}
+
+.ColumnContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3px;
+  padding-right: 3px;
+}

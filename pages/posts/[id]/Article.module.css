@@ -1,0 +1,186 @@
+.Container {
+  background-color: var(--background);
+  position: relative;
+  place-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  border-radius: 0.5em;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  max-width: 694px;
+  background-repeat: no-repeat;
+  margin: 2.5rem;
+}
+
+.Container code {
+  font-size: 0.8em;
+  background-color: var(--background);
+  line-height: initial;
+  color: var(--text);
+}
+
+.Container img {
+  width: 100%;
+  max-width: min-content;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2px;
+  max-height: 280px;
+  object-fit: cover;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.ActionButtonDelete {
+  float: right;
+  text-align: right;
+}
+
+.AvatarContainer {
+  display: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+.AvatarContainer img {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.ActionButtonDelete svg:hover {
+  background-color: grey;
+}
+
+.MenuContainer {
+  display: flex;
+  height: 2em;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.ItemFooter {
+  display: flex;
+  text-rendering: auto;
+}
+
+.TagsContainer {
+  display: flex;
+  width: 100%;
+}
+
+.CommentIconContainer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  margin: auto;
+  padding-left: 12px;
+}
+
+.LikeIconContainer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  margin: auto;
+  padding-left: 12px;
+}
+
+.LikesContainer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: row-reverse;
+  margin: auto;
+}
+
+.CommentContainer {
+  width: 15%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: row-reverse;
+}
+
+.LikeCount {
+  display: flex;
+  font-size: 0.6em;
+  width: 1em;
+  padding-left: 0.4em;
+  text-align: center;
+}
+
+.DateContainer {
+  display: flex;
+  width: 100%;
+  font-size: 0.6em;
+}
+
+.CommentItemDate {
+  display: flex;
+}
+
+.ContentBody {
+  composes: TextBase from '../../../styles/text.css';
+  margin-bottom: 1em;
+}
+
+.ContentBody p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
+  word-wrap: break-word;
+}
+
+.ContentBody h1 {
+  font-size: 1.4em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ContentBody h2 {
+  font-size: 1.2em;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.ContentBody h3 {
+  font-size: 1em;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  color: var(--titletext);
+}
+
+.ContentBody blockquote {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-left: 0.25em solid #e52e71;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.ContentBody a {
+  word-break: break-all;
+}
+
+.ContentBody ol {
+  font-size: 14px;
+}
+
+.ContentBody li {
+  font-size: 14px;
+}
+
+.ContentBody img {
+  border-radius: 2px;
+}

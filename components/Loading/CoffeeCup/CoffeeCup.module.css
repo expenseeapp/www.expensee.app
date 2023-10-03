@@ -1,0 +1,102 @@
+.CupBase {
+  width: 20px;
+  height: 20px;
+  border: 1px rgba(255, 255, 255, 1) solid;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  margin: 0px auto;
+}
+
+.Cup {
+  composes: CupBase;
+
+  border: 1px black solid;
+}
+
+.DarkCup {
+  composes: CupBase;
+
+  border: 1px rgba(255, 255, 255, 1) solid;
+}
+
+.Cup:after,
+.Cup:before {
+  position: absolute;
+  content: '';
+}
+
+.DarkCup:after,
+.DarkCup:before {
+  position: absolute;
+  content: '';
+}
+
+.Cup:after {
+  width: 5px;
+  height: 12px;
+  border: 1px #000 solid;
+  border-left: none;
+  border-radius: 0px 20px 20px 0px;
+  left: 20px;
+}
+
+.DarkCup:after {
+  width: 5px;
+  height: 12px;
+  border: 1px #fff solid;
+  border-left: none;
+  border-radius: 0px 20px 20px 0px;
+  left: 20px;
+}
+
+.Cup:before {
+  width: 1px;
+  height: 6px;
+  background-color: black;
+  top: -10px;
+  left: 4px;
+  box-shadow: 5px 0px 0px 0px black, 5px -5px 0px 0px black, 10px 0px 0px 0px black;
+  -webkit-animation: steam 1s linear infinite alternate;
+  -moz-animation: steam 1s linear infinite alternate;
+  animation: steam 1s linear infinite alternate;
+}
+
+.DarkCup:before {
+  width: 1px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 1);
+  top: -10px;
+  left: 4px;
+  box-shadow: 5px 0px 0px 0px rgba(255, 255, 255, 1), 5px -5px 0px 0px rgba(255, 255, 255, 1),
+    10px 0px 0px 0px rgba(255, 255, 255, 1);
+  -webkit-animation: steam 1s linear infinite alternate;
+  -moz-animation: steam 1s linear infinite alternate;
+  animation: steam 1s linear infinite alternate;
+}
+
+@-webkit-keyframes steam {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 6px;
+  }
+}
+
+@-moz-keyframes steam {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 6px;
+  }
+}
+
+@keyframes steam {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 6px;
+  }
+}

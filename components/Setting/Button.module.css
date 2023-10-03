@@ -1,0 +1,145 @@
+.Base {
+  align-items: flex-start;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat-x: ;
+  background-repeat-y: ;
+  background-size: auto;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400;
+  height: 33px;
+  letter-spacing: normal;
+  line-height: 33px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 0px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 0px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgba(0, 0, 0, 0.54);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-indent: 0px;
+  text-rendering: optimizelegibility;
+  text-shadow: none;
+  text-size-adjust: 100%;
+  text-transform: none;
+  transition-delay: 0s, 0s, 0s, 0s;
+  transition-duration: 0.1s, 0.1s, 0.1s, 0.1s;
+  transition-property: background-color, border-color, color, fill;
+  transition-timing-function: ease, ease, ease, ease;
+  user-select: none;
+  vertical-align: bottom;
+  visibility: visible;
+  white-space: nowrap;
+  width: 100%;
+  min-width: 100px;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-border-image: none;
+}
+
+.Submit {
+  composes: Base;
+}
+
+.DarkSubmit {
+  composes: Base;
+
+  background: black;
+}
+
+.Logout {
+  composes: Base;
+}
+
+.DarkLogout {
+  composes: Base;
+
+  background: black;
+}
+
+@media (max-width: 800px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  /* smartphones, Android phones, landscape iPhone */
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .Submit {
+    composes: Base;
+  }
+
+  .DarkSubmit {
+    composes: Base;
+
+    background: black;
+  }
+
+  .Logout {
+    composes: Base;
+  }
+
+  .DarkLogout {
+    composes: Base;
+
+    background: black;
+  }
+}
+
+@media (min-width: 801px) and (min-width: 1025px) and (min-width: 1281px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  /* big landscape tablets, laptops, and desktops */
+  /* hi-res laptops and desktops */
+  .Submit {
+    composes: Base;
+  }
+
+  .Logout {
+    composes: Base;
+  }
+}

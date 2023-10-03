@@ -1,0 +1,16 @@
+{
+  "slogan": "ExpenSee・你的个人财务助理",
+  "description": "支持语音和自然语言记录的安全记账应用",
+  "SiteSubject": "记账, 语音记账, 自然语言记账, 拍照记账, AI 记账, GPT 记账, 记录情绪, 记账 API, 自动记账",
+  "SiteKeyWords": "记账, 语音记账, 自然语言记账, 拍照记账, AI 记账, GPT 记账, 记录情绪, 记账 API, 自动记账",
+  "SiteDescription": "ExpenSee, 一款可以随时随地通过语音直接记录消费并将数据安全存储在iCloud中的记账应用",
+  "SpeakToTrack": "语音记账, 告别繁琐手动输入",
+  "TextToTrack": "自然语言记账, 记录只需一句话",
+  "MoodsLight": "情绪红绿灯, 不只记录数字，也包含情绪",
+  "SiriYourAssistant": "Siri 个人财务助理",
+  "PhotoToTrack": "拍照记账",
+  "APIAutomation": "HTTP API 支持",
+  "contact": "联系作者",
+  "status": "服务状态",
+  "document": "文档"
+}

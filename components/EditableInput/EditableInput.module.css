@@ -1,0 +1,14 @@
+.Container {
+  padding: 0.6em 1em;
+  border: 1px solid var(--codeblockboarder);
+  line-height: 1em;
+  background-color: var(--editablebackground);
+}
+
+.Container input {
+  outline: none;
+  border: none;
+  font-size: 1.2em;
+  width: 100%;
+  font-weight: 300;
+}

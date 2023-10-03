@@ -1,0 +1,37 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: auto;
+  max-width: 694px;
+  font-size: 16px;
+  background-color: var(--bodybackground);
+}
+
+.Container h1 {
+  line-height: 1em;
+}
+
+.Container h2 {
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  line-height: 1.2em;
+}
+
+.Container ul {
+  position: relative;
+  line-height: 1.5em;
+  fill: rgb(0 0 0 / 76%);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  visibility: visible;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
+  margin-bottom: 16px;
+}

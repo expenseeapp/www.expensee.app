@@ -1,0 +1,34 @@
+.Container {
+  text-align: left;
+  padding: 16px;
+}
+
+.ContainerBox {
+  display: flex;
+  margin: 1em 0em;
+  border: 1px solid var(--codeblockboarder);
+  border-left: 1px solid var(--editableborder);
+  line-height: 1em;
+  background-color: var(--editablebackground);
+  height: 36px;
+}
+
+.InputContainer {
+  width: 100%;
+}
+
+.InputContainer input {
+  outline: none;
+  border: none;
+  font-size: 0.8em;
+  width: 100%;
+  font-weight: 300;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0px 0px;
+}
+
+.SpanURL {
+  text-decoration: underline;
+  cursor: pointer;
+}
