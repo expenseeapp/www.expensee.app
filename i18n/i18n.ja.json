@@ -1,0 +1,16 @@
+{
+  "slogan": "ExpenSee・記帳は記憶の記録",
+  "description": "音声と自然な言葉で記録できる安全な家計簿アプリ",
+  "SiteSubject": "記帳、音声入力、自然な言葉での入力、写真での入力、AIによる入力、GPTによる入力、感情の記録、APIによる入力、自動入力",
+  "SiteKeyWords": "記帳、音声入力、自然な言葉での入力、写真での入力、AIによる入力、GPTによる入力、感情の記録、APIによる入力、自動入力",
+  "SiteDescription": "ExpenSeeは、いつでもどこでも音声で支出を記録し、データをiCloudに安全に保存できる家計簿アプリです。",
+  "SpeakToTrack": "音声で記録、手作業の手間を省く",
+  "TextToTrack": "自然な言葉での記録、一言で済む",
+  "MoodsLight": "感情の赤・黄・緑信号、数字だけでなく、感情も記録",
+  "SiriYourAssistant": "Siriパーソナルファイナンスアシスタント",
+  "PhotoToTrack": "写真での記録",
+  "APIAutomation": "HTTP API対応",
+  "contact": "開発者に連絡",
+  "status": "サービス状況",
+  "document": "ドキュメント"
+}
